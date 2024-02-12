@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- tailwind link cdn -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Kaushan+Script&family=Lakki+Reddy&display=swap"
+        rel="stylesheet" />
+    <script src="https://kit.fontawesome.com/16b91e1b50.js" crossorigin="anonymous"></script>
+    <title>Paradigm Pet Professionals</title>
+</head>
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+    }
+
+    h1 {
+        font-family: "Lakki Reddy", serif;
+        font-size: 50px;
+        font-weight: 600;
+    }
+
+    h2 {
+        font-family: "Lakki Reddy", serif;
+    }
+
+    header {
+        font-weight: 700;
+    }
+
+    section {
+        background-image: url("../images/planning.jpg");
+        margin-top: 25px;
+    }
+
+    .dropdown {
+        position: relative;
+        display: inline-block;
+    }
+
+    .dropdown-content {
+        display: none;
+        position: absolute;
+        min-width: 160px;
+        box-shadow: 0px 18px 16px 0px rgba(0, 0, 0, 0.8);
+        z-index: 1;
+        font-weight: 500;
+        background-color: aliceblue;
+    }
+
+    .dropdown-content a {
+        color: black;
+        padding: 12px 16px;
+        text-decoration: none;
+        display: block;
+    }
+
+    .dropdown:hover .dropdown-content {
+        display: block;
+    }
+    #myBtn {
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  right: 30px;
+  z-index: 99;
+  border: none;
+  outline: none;
+  background-color: red;
+  color: white;
+  cursor: pointer;
+  padding: 15px;
+  border-radius: 10px;
+}
+#myBtn:hover {
+  background-color: #555;
+}
+</style>
+
+<body>
+    <header class="bg-white mt-10">
+        <div class="mx-auto max-w-screen-xl px-4 sm:px-6 lg:px-8">
+            <a class="block text-teal-600 flex item-center justify-center" href="../index.html">
+                <img class="w-[300px] h-[200px]" src="../images/logo.png" />
+            </a>
+
+            <div class="flex h-16 items-center justify-center item-center bg-[#16748F]">
+                <div class="md:flex md:items-center md:gap-12 sm:flex">
+                    <nav aria-label="Global" class="sm:flex md:block">
+                        <ul class="flex items-center gap-6 text-sm sm:text-[10px] lg:text-[20px]">
+                            <li>
+                                <div class="dropdown">
+                                    <button class="dropbtn">
+                                        Island
+                                        <i class="fa fa-caret-down"></i>
+                                    </button>
+                                    <div class="dropdown-content">
+                                        <a href="../index.html#donate">Donate</a>
+                                        <a href="../index.html#local">Shop LocaL</a>
+                                        <a href="../index.html#faq">Travel FAQ</a>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="dropdown">
+                                    <button class="dropbtn">
+                                        Experiences
+                                        <i class="fa fa-caret-down"></i>
+                                    </button>
+                                    <div class="dropdown-content">
+                                        <a href="#restaurants">Restaurants</a>
+                                        <a href="#entertainment">Entertainment</a>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="dropdown">
+                                    <button class="dropbtn">
+                                        Culture
+                                        <i class="fa fa-caret-down"></i>
+                                    </button>
+                                    <div class="dropdown-content">
+                                        <a href="/#history">History</a>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="dropdown">
+                                    <button class="dropbtn">
+                                        Planning
+                                        <i class="fa fa-caret-down"></i>
+                                    </button>
+                                    <div class="dropdown-content">
+                                        <a href="#transportation">Transportation</a>
+                                        
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <section class="overflow-hidden bg-cover bg-top bg-no-repeat">
+        <div class="bg-black/25 p-8 md:p-12 lg:px-20 lg:py-[10rem]">
+            <div class="text-center ltr:sm:text-left rtl:sm:text-right">
+                <h2 class="text-2xl font-bold text-white sm:text-3xl md:text-5xl">
+                    Plan your trip to <br />
+                    Taniti Islands!
+                </h2>
+
+                <div class="mt-4 sm:mt-8">
+                    <a href="/#faq"
+                        class="inline-block rounded-full bg-[#003B6D] px-12 py-3 text-sm font-medium text-white transition hover:bg-blue-800 focus:outline-none focus:ring">
+                        FAQ
+                        <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- breadcrumbs -->
+    <article>
+        <ol class="flex items-center justify-center gap-1 text-[20px] text-gray-600 mt-10 font-semibold">
+            <li>
+                <a href="../index.html" class="block transition hover:text-gray-700">
+                    Home
+                </a>
+            </li>
+
+            <li class="rtl:rotate-180">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" viewBox="0 0 20 20" fill="currentColor">
+                    <path fill-rule="evenodd"
+                        d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z"
+                        clip-rule="evenodd" />
+                </svg>
+            </li>
+
+            <li>
+                <a href="/#faq" class="block transition hover:text-gray-700"> FAQ</a>
+            </li>
+            <li class="rtl:rotate-180">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" viewBox="0 0 20 20" fill="currentColor">
+                    <path fill-rule="evenodd"
+                        d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z"
+                        clip-rule="evenodd" />
+                </svg>
+            </li>
+            <li>
+                <a href="/#contact" class="block transition hover:text-gray-700">
+                    Contact</a>
+            </li>
+        </ol>
+    </article>
+    <button onclick="topFunction()" id="myBtn" title="Go to top" class="text-white">
+        <i class="fa-solid fa-arrow-up"></i> </button>
+    <!-- information cards -->
+    <div class="grid grid-cols-2 mt-32 pl-32" id="hotels">
+        <div class="w-100 sm:max-w-2xl">
+            <h3 class="text-[30px] text-gray-900">Lodging</h3>
+
+            <p class="text-gray-700 text-wrap overflow-hidden">
+                Taniti has a wide variety of lodging that ranges from an
+                inexpensive hostel to one large, four-star resort. There are many
+                small, family-owned hotels and a growing number of bed and breakfasts.
+                All types of lodging are strictly regulated and regularly inspected by
+                the Tanitian government.
+            </p>
+        </div>
+        <div class="flex items-center gap-32">
+            <img src="../images/hotels.jpg " alt="hotels" class="h-[400px] rounded-lg" />
+        </div>
+    </div>
+    <div class="grid grid-cols-2 mt-32 pl-32" id="restaurants">
+        <div class="w-100 sm:max-w-2xl">
+            <h3 class="text-[30px] text-gray-900">Restaurants</h3>
+
+            <p class="text-gray-700 text-wrap overflow-hidden">
+                <span class="text-red-500">Restaurants: </span>Taniti currently has 10
+                restaurants: five serve mostly local fish and rice, three serve
+                American-style meals, and two serve Pan-Asian cuisine. <br />
+                <br />
+                <span class="text-red-500">Grocery Stores: </span>Taniti has two
+                supermarkets, two smaller grocery stores, and one convenience store
+                that is open 24 hours a day.
+            </p>
+        </div>
+        <div class="flex items-center gap-32">
+            <img src="../images/restaurants.jpg" alt="restaurants" class="h-[400px] rounded-lg" />
+        </div>
+    </div>
+
+    <div class="grid grid-cols-2 mt-32 pl-32" id="entertainment">
+        <div class="w-100 sm:max-w-2xl">
+            <h3 class="text-[30px] text-gray-900">Entertainment</h3>
+
+            <p class="text-gray-700 text-wrap overflow-hidden">
+                Most people visit Taniti to enjoy the beaches, explore the rainforest,
+                and to visit the volcano. However, there are other things to do,
+                including visiting a local history museum, going on chartered fishing
+                tours, snorkeling, zip-lining in the rainforest, visiting several
+                pubs, including a microbrewery, dancing at a new dance club, seeing a
+                movie, taking helicopter rides, playing at an arcade, visiting art
+                galleries, and bowling. Also, a nine-hole golf course should be
+                operational by next year. Many of these activities are located in
+                Merriton Landing, which is a rapidly developing area on the north side
+                of Yellow Leaf Bay. <br /><br />
+                <span class="text-red-500"> Sightseeing:</span> Most tourists spend
+                most of their time in Taniti City, which boasts native architecture
+                and nearby white, sandy beaches that encircle Yellow Leaf Bay. Other
+                popular activities include boat or bus tours of the island, hikes in
+                the rainforest, or visits to Taniti’s active volcano.
+            </p>
+        </div>
+        <div class="flex items-center gap-32">
+            <img src="../images/fun.jpg" alt="" class="h-[400px] rounded-lg" />
+        </div>
+    </div>
+    <div class="grid grid-cols-2 mt-32 pl-32" id="transportation">
+        <div class="w-100 sm:max-w-2xl">
+            <h3 class="text-[30px] text-gray-900">Transportation</h3>
+
+            <p class="text-gray-700 text-wrap overflow-hidden">
+                Almost all visitors arrive to Taniti by air, though some arrive on a
+                small cruise ship that docks in Yellow Leaf Bay for one night per
+                week. Taniti is served by a small airport that can accommodate small
+                jets and propeller planes. Taniti is in the process of expanding the
+                airport so larger jets will be able to land on the island within the
+                next few years.
+                <br />
+                <br />
+                <span class="text-red-500">Ground Transportation: </span>Public buses
+                serve Taniti City and run from 5 a.m. to 11 p.m. every day. Private
+                buses serve the rest of the island. Taxis are available in Taniti
+                City, and rental cars can be rented from a local rental agency near
+                the airport. Bikes and helmets are available to rent from several
+                vendors (helmets are required by law). Taniti City is fairly flat and
+                very walkable. Many tourists stay in the area surrounding Merriton
+                Landing: this area is easy to explore on foot.
+            </p>
+        </div>
+        <div class="flex items-center gap-32">
+            <img src="../images/transportation.jpg" alt="" class="h-[400px] rounded-lg" />
+        </div>
+    </div>
+
+    <footer class="bg-[#16748F] mt-20">
+        <div class="mx-auto max-w-5xl px-4 py-16 sm:px-6 lg:px-8">
+            <div class="flex justify-center text-teal-600">
+                <img class="h-16 w-16" src="../images/logo.png" alt="logo" />
+            </div>
+
+            <p class="mx-auto mt-6 max-w-md text-center text-white leading-relaxed text-gray-500">
+                Taniti Islands
+            </p>
+
+            <ul class="mt-12 flex flex-wrap justify-center gap-6 md:gap-8 lg:gap-12">
+                <li>
+                    <a class="text-white transition hover:text-gray-700/75" href="../index.html">
+                        Home
+                    </a>
+                </li>
+
+                <li>
+                    <a class="text-white transition hover:text-gray-700/75" href="./planning.html">
+                      Planning
+                    </a>
+                </li>
+                <li>
+                    <a class="text-white transition hover:text-gray-700/75" href="/#faq">
+                        FAQ</a>
+                </li>
+            </ul>
+
+            <ul class="mt-12 flex justify-center gap-6 md:gap-8">
+                <li>
+                    <a href="/" rel="noreferrer" target="_blank"
+                        class="text-white transition hover:text-gray-700/75">
+                        <span class="sr-only">Facebook</span>
+                        <svg class="h-6 w-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                            <path fill-rule="evenodd"
+                                d="M22 12c0-5.523-4.477-10-10-10S2 6.477 2 12c0 4.991 3.657 9.128 8.438 9.878v-6.987h-2.54V12h2.54V9.797c0-2.506 1.492-3.89 3.777-3.89 1.094 0 2.238.195 2.238.195v2.46h-1.26c-1.243 0-1.63.771-1.63 1.562V12h2.773l-.443 2.89h-2.33v6.988C18.343 21.128 22 16.991 22 12z"
+                                clip-rule="evenodd" />
+                        </svg>
+                    </a>
+                </li>
+
+                <li>
+                    <a href="/" rel="noreferrer" target="_blank"
+                        class="text-white transition hover:text-gray-700/75">
+                        <span class="sr-only">Instagram</span>
+                        <svg class="h-6 w-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                            <path fill-rule="evenodd"
+                                d="M12.315 2c2.43 0 2.784.013 3.808.06 1.064.049 1.791.218 2.427.465a4.902 4.902 0 011.772 1.153 4.902 4.902 0 011.153 1.772c.247.636.416 1.363.465 2.427.048 1.067.06 1.407.06 4.123v.08c0 2.643-.012 2.987-.06 4.043-.049 1.064-.218 1.791-.465 2.427a4.902 4.902 0 01-1.153 1.772 4.902 4.902 0 01-1.772 1.153c-.636.247-1.363.416-2.427.465-1.067.048-1.407.06-4.123.06h-.08c-2.643 0-2.987-.012-4.043-.06-1.064-.049-1.791-.218-2.427-.465a4.902 4.902 0 01-1.772-1.153 4.902 4.902 0 01-1.153-1.772c-.247-.636-.416-1.363-.465-2.427-.047-1.024-.06-1.379-.06-3.808v-.63c0-2.43.013-2.784.06-3.808.049-1.064.218-1.791.465-2.427a4.902 4.902 0 011.153-1.772A4.902 4.902 0 015.45 2.525c.636-.247 1.363-.416 2.427-.465C8.901 2.013 9.256 2 11.685 2h.63zm-.081 1.802h-.468c-2.456 0-2.784.011-3.807.058-.975.045-1.504.207-1.857.344-.467.182-.8.398-1.15.748-.35.35-.566.683-.748 1.15-.137.353-.3.882-.344 1.857-.047 1.023-.058 1.351-.058 3.807v.468c0 2.456.011 2.784.058 3.807.045.975.207 1.504.344 1.857.182.466.399.8.748 1.15.35.35.683.566 1.15.748.353.137.882.3 1.857.344 1.054.048 1.37.058 4.041.058h.08c2.597 0 2.917-.01 3.96-.058.976-.045 1.505-.207 1.858-.344.466-.182.8-.398 1.15-.748.35-.35.566-.683.748-1.15.137-.353.3-.882.344-1.857.048-1.055.058-1.37.058-4.041v-.08c0-2.597-.01-2.917-.058-3.96-.045-.976-.207-1.505-.344-1.858a3.097 3.097 0 00-.748-1.15 3.098 3.098 0 00-1.15-.748c-.353-.137-.882-.3-1.857-.344-1.023-.047-1.351-.058-3.807-.058zM12 6.865a5.135 5.135 0 110 10.27 5.135 5.135 0 010-10.27zm0 1.802a3.333 3.333 0 100 6.666 3.333 3.333 0 000-6.666zm5.338-3.205a1.2 1.2 0 110 2.4 1.2 1.2 0 010-2.4z"
+                                clip-rule="evenodd" />
+                        </svg>
+                    </a>
+                </li>
+            </ul>
+            <p class="text-center mt-4">Copyright 2024. All rights reserved</p>
+        </div>
+    </footer>
+    <script>
+        window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+    document.getElementById("myBtn").style.display = "block";
+  } else {
+    document.getElementById("myBtn").style.display = "none";
+  }
+}
+
+function topFunction() {
+  document.body.scrollTop = 0;
+  document.documentElement.scrollTop = 0;
+}
+    </script>
+</body>
+
+</html>
